@@ -10,9 +10,9 @@
 		2C25ACFD295B342E00040F33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C25ACFC295B342E00040F33 /* AppDelegate.swift */; };
 		2C25ACFF295B342E00040F33 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C25ACFE295B342E00040F33 /* SceneDelegate.swift */; };
 		2C25AD01295B342E00040F33 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C25AD00295B342E00040F33 /* ViewController.swift */; };
-		2C25AD04295B342E00040F33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C25AD02295B342E00040F33 /* Main.storyboard */; };
 		2C25AD06295B342F00040F33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C25AD05295B342F00040F33 /* Assets.xcassets */; };
 		2C25AD09295B342F00040F33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C25AD07295B342F00040F33 /* LaunchScreen.storyboard */; };
+		2C25AD19295B37B800040F33 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2C25AD18295B37B800040F33 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,7 +20,6 @@
 		2C25ACFC295B342E00040F33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C25ACFE295B342E00040F33 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		2C25AD00295B342E00040F33 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2C25AD03295B342E00040F33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2C25AD05295B342F00040F33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C25AD08295B342F00040F33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C25AD0A295B342F00040F33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -31,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C25AD19295B37B800040F33 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +56,54 @@
 		2C25ACFB295B342E00040F33 /* Table view cell */ = {
 			isa = PBXGroup;
 			children = (
-				2C25ACFC295B342E00040F33 /* AppDelegate.swift */,
-				2C25ACFE295B342E00040F33 /* SceneDelegate.swift */,
-				2C25AD00295B342E00040F33 /* ViewController.swift */,
-				2C25AD02295B342E00040F33 /* Main.storyboard */,
-				2C25AD05295B342F00040F33 /* Assets.xcassets */,
-				2C25AD07295B342F00040F33 /* LaunchScreen.storyboard */,
-				2C25AD0A295B342F00040F33 /* Info.plist */,
+				2C25AD13295B360900040F33 /* Resources */,
+				2C25AD16295B366B00040F33 /* Sources */,
 			);
 			path = "Table view cell";
+			sourceTree = "<group>";
+		};
+		2C25AD12295B35FA00040F33 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2C25ACFC295B342E00040F33 /* AppDelegate.swift */,
+				2C25ACFE295B342E00040F33 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		2C25AD13295B360900040F33 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2C25AD05295B342F00040F33 /* Assets.xcassets */,
+				2C25AD14295B363100040F33 /* Configuration */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2C25AD14295B363100040F33 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				2C25AD0A295B342F00040F33 /* Info.plist */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		2C25AD15295B365000040F33 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				2C25AD07295B342F00040F33 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		2C25AD16295B366B00040F33 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				2C25AD12295B35FA00040F33 /* App */,
+				2C25AD00295B342E00040F33 /* ViewController.swift */,
+				2C25AD15295B365000040F33 /* Storyboards */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +122,9 @@
 			dependencies = (
 			);
 			name = "Table view cell";
+			packageProductDependencies = (
+				2C25AD18295B37B800040F33 /* SnapKit */,
+			);
 			productName = "Table view cell";
 			productReference = 2C25ACF9295B342E00040F33 /* Table view cell.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +153,9 @@
 				Base,
 			);
 			mainGroup = 2C25ACF0295B342E00040F33;
+			packageReferences = (
+				2C25AD17295B37B800040F33 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 2C25ACFA295B342E00040F33 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +172,6 @@
 			files = (
 				2C25AD09295B342F00040F33 /* LaunchScreen.storyboard in Resources */,
 				2C25AD06295B342F00040F33 /* Assets.xcassets in Resources */,
-				2C25AD04295B342E00040F33 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,14 +191,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		2C25AD02295B342E00040F33 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2C25AD03295B342E00040F33 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		2C25AD07295B342F00040F33 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -302,9 +338,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Yz.Table-view-cell";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -330,9 +369,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Yz.Table-view-cell";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -358,6 +400,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2C25AD17295B37B800040F33 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2C25AD18295B37B800040F33 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2C25AD17295B37B800040F33 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2C25ACF1295B342E00040F33 /* Project object */;
 }
